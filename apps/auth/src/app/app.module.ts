@@ -22,27 +22,8 @@ import { environment } from '../environments/environment.development';
       ],
       { initialNavigation: 'enabledBlocking' }
     ),
-    AuthModule.forRoot({
-      domain: environment.domain,
-      clientId: environment.clientId,
-      authorizationParams: {
-        redirect_uri: `${window.location.origin}/callback`,
-        audience: environment.audience
-      },
-      httpInterceptor: {
-        allowedList: [environment.api_url+'*'],
-      },
-      // useRefreshTokens: true,
-    }),
-    HttpClientModule,
   ],
-  providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: AuthHttpInterceptor,
-      multi: true,
-    },
-  ],
+  providers: [ ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

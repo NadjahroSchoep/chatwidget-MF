@@ -22,7 +22,6 @@ import { TranslateModule } from '@ngx-translate/core';
     SimplebarAngularModule, 
     FormsModule,
     HttpClientModule,
-    
   ],
   providers: [],
 })

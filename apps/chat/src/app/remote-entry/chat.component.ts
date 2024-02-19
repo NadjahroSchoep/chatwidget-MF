@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ApiService } from '@chatwidget/api';
-import { ChannelService, ChatClientService, StreamI18nService } from 'stream-chat-angular';
+import { ChannelService, ChatClientService, StreamChatModule, StreamI18nService } from 'stream-chat-angular';
 import { AuthService } from '@auth0/auth0-angular';
 import { Router } from '@angular/router';
 
