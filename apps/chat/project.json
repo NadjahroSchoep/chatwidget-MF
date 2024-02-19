@@ -16,7 +16,7 @@
         "tsConfig": "apps/chat/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/chat/src/favicon.ico", "apps/chat/src/assets"],
-        "styles": ["apps/chat/src/styles.scss"],
+        "styles": ["apps/chat/src/styles.scss", "apps/chat/src/app/remote-entry/chat.component.scss"],
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/chat/webpack.config.js"

@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ApiService } from '@chatwidget/api';
-import { ChannelService, ChatClientService, StreamChatModule, StreamI18nService } from 'stream-chat-angular';
+import { ChannelService, ChatClientService, StreamI18nService } from 'stream-chat-angular';
 import { AuthService } from '@auth0/auth0-angular';
 import { Router } from '@angular/router';
 
@@ -23,7 +23,7 @@ export class ChatComponent implements OnInit {
     private channelService: ChannelService,
     private streamI18nService: StreamI18nService,
   ) {
-    this.showAddButton = this.isRouteAvailable('add-channel');
+    this.showAddButton = this.isRouteAvailable('chat/add-channel');
    }
 
   ngOnInit() {
@@ -56,7 +56,7 @@ export class ChatComponent implements OnInit {
   }
 
   addChannel() {
-    this.router.navigateByUrl('/add-channel');
+    this.router.navigateByUrl('chat/add-channel');
   }
 
   isRouteAvailable(path: string): boolean {

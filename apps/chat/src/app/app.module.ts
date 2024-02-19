@@ -19,8 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
         },
       ],
       { initialNavigation: 'enabledBlocking' }
-    ),
-    HttpClientModule
+    )
   ],
   providers: [],
   bootstrap: [AppComponent],
