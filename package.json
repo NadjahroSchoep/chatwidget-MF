@@ -13,8 +13,13 @@
     "@angular/platform-browser": "~15.0.0",
     "@angular/platform-browser-dynamic": "~15.0.0",
     "@angular/router": "~15.0.0",
+    "@auth0/auth0-angular": "^2.2.3",
+    "@ngx-translate/core": "^15.0.0",
     "@nrwl/angular": "15.4.8",
     "rxjs": "~7.5.0",
+    "simplebar-angular": "^3.2.4",
+    "stream-chat": "^8.16.0",
+    "stream-chat-angular": "^4.59.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

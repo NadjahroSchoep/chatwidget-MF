@@ -1,0 +1,13 @@
+<div id="container">
+  <div id="loader" *ngIf="(isAuthenticated$ | async) === false"></div>
+
+  <div id="buttons">
+    <div *ngIf="auth.isAuthenticated$ | async; else loginButton">
+      <button (click)="logout()">Logout</button>
+    </div>
+    <ng-template #loginButton>
+      <button mat-button (click)="login()">Login</button>
+      <button (click)="signup()">Sign up</button>
+    </ng-template>
+  </div>
+</div>
