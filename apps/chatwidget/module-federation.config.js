@@ -11,6 +11,9 @@ const dependencies = new Set([
 
 module.exports = {  
   name: 'chatwidget',
+  exposes: {
+    './Module': 'apps/chatwidget/src/app/remote-entry/entry.module.ts',
+  },
   remotes: [],
   shared: (libraryName, defaultConfig) => {
     if (dependencies.has(libraryName)) {
