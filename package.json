@@ -16,6 +16,7 @@
     "@auth0/auth0-angular": "^2.2.3",
     "@ngx-translate/core": "^15.0.0",
     "@nrwl/angular": "15.4.8",
+    "@stream-io/stream-chat-css": "^4.7.2",
     "rxjs": "~7.5.0",
     "simplebar-angular": "^3.2.4",
     "stream-chat": "^8.16.0",

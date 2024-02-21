@@ -14,6 +14,8 @@ module.exports = {
   exposes: {
     './Module': 'apps/chatwidget/src/app/remote-entry/entry.module.ts',
   },
+  filename: './remote.js',
+  publicPath: 'http://localhost:4200/',
   remotes: [],
   shared: (libraryName, defaultConfig) => {
     if (dependencies.has(libraryName)) {
