@@ -9,13 +9,8 @@ const dependencies = new Set([
   '@auth0/auth0-angular'
 ]);
 
-module.exports = {  
+module.exports = {
   name: 'chatwidget',
-  exposes: {
-    './Module': 'apps/chatwidget/src/app/remote-entry/entry.module.ts',
-  },
-  filename: './remote.js',
-  publicPath: 'http://localhost:4200/',
   remotes: [],
   shared: (libraryName, defaultConfig) => {
     if (dependencies.has(libraryName)) {
