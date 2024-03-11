@@ -2,9 +2,7 @@
   "name": "chatwidget",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {
-    "serve-shell": "nx serve chatwidget"
-  },
+  "scripts": {},
   "private": true,
   "dependencies": {
     "@angular/animations": "~15.0.0",
